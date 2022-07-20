@@ -3,11 +3,13 @@
 import Message from "./components/Message";
 
 import "./App.css";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div className="App">
-      <Message />
+      <Counter />
+      {/* <Message /> */}
 
       {/* <Greet name="Taufan">
         <p>This is children</p>
