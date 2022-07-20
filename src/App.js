@@ -4,19 +4,23 @@ import Message from "./components/Message";
 
 import "./App.css";
 import Counter from "./components/Counter";
+import FunctionClick from "./components/FunctionClick";
+import ClassClick from "./components/ClassClick";
 
 function App() {
   return (
     <div className="App">
+      <FunctionClick />
+      <ClassClick />
       {/* <Counter /> */}
       {/* <Message /> */}
-      <Greet name="Taufan" heroName="Tamvan">
+      {/* <Greet name="Taufan" heroName="Tamvan">
         <p>This is children</p>
-      </Greet>
+      </Greet> */}
       <hr />
-      <Welcome name="Taufan" heroName="Tamvan">
+      {/* <Welcome name="Taufan" heroName="Tamvan">
         <p>This is children</p>
-      </Welcome>
+      </Welcome> */}
     </div>
   );
 }
