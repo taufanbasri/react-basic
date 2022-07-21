@@ -1,13 +1,12 @@
 import React, { Component } from "react";
 import "./App.css";
-
-import ParentComponent from "./components/ParentComponent";
+import RefsDemo from "./components/RefsDemo";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ParentComponent />
+        <RefsDemo />
       </div>
     );
   }
