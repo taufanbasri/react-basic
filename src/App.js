@@ -1,14 +1,30 @@
 import React, { Component } from "react";
 import "./App.css";
-import ClickCounter from "./components/ClickCounter";
-import HoverCounter from "./components/HoverCounter";
+import ClickCounterTwo from "./components/ClickCounterTwo";
+import Counter from "./components/Counter";
+import HoverCounterTwo from "./components/HoverCounterTwo";
+import User from "./components/User";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ClickCounter name="Taufan" />
-        <HoverCounter name="Taufan" />
+        <Counter>
+          {(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        </Counter>
+        <Counter>
+          {(count, incrementCount) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount} />
+          )}
+        </Counter>
+
+        {/* <ClickCounterTwo />
+        <HoverCounterTwo />
+        <User
+          render={(isLoggedIn) => (isLoggedIn ? "Taufan Prasetyo" : "Guest")}
+        /> */}
       </div>
     );
   }
