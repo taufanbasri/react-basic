@@ -7,8 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <ClickCounter />
-        <HoverCounter />
+        <ClickCounter name="Taufan" />
+        <HoverCounter name="Taufan" />
       </div>
     );
   }
